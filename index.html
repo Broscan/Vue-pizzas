@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Pizzas</title>
+  </head>
+  <body>
+    <div id="app">
+      <input v-model="pizzaName" type="text" placeholder="Name of pizza:" />
+      <input v-model="tastyness" type="text" placeholder="Tastyness:" />
+      <button @click="addPizza">Add Pizza!</button>
+
+      <h1 v-for="(pizza, index) in pizzas" :key="index">
+        Pizza: {{pizza.name}} | Tastyness: {{pizza.tastyness}}
+        <a @click="removePizza(index)" style="color: red">X</a>
+      </h1>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "pizzas": [
+    {
+      "id": "1",
+      "name": "vesuvio",
+      "tastyness": 10
+    },
+    {
+      "id": "2",
+      "name": "capricciosa",
+      "tastyness": 6
+    },
+    {
+      "id": "67b5",
+      "name": "dsads",
+      "tastyness": "10"
+    }
+  ]
+}
